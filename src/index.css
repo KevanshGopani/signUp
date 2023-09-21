@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgb(31 41 55);
+}
+@layer components {
+  .inputClass {
+    @apply flex gap-2 bg-transparent;
+  }
+
+  .head {
+    @apply text-orange-400 font-semibold text-2xl border-t-2 border-cyan-950 mt-6 underline underline-offset-4 border-t-white p-4 flex items-center justify-center uppercase;
+  }
+
+  .inputName {
+    @apply text-white font-normal text-base;
+  }
+  .input {
+    @apply bg-gray-600/80 text-white outline-none rounded-lg border focus:border-yellow-400 pl-2 h-7 ml-3;
+  }
+  .headingM {
+    @apply flex gap-5 mt-4 ml-6;
+  }
+}
